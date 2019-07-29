@@ -22,7 +22,7 @@
       <a href="#" class="page-header__singin">Загерестрируйся</a>
     </div>
   </header>
-  <main class="page-main">title
+  <main class="page-main">
     <blockquote class="review">
       <p class="review__quote">«Лучшее приложение, что я видел в жизни!»</p>
       <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
@@ -45,7 +45,7 @@
         <li class="land directions__item">
           <img src="http://placehold.it/270x110" alt="Фотография видов Тайланда" class="land__img">
           <img src="http://placehold.it/35x24" alt="Национальный флаг Тайланда" class="land__flag">
-          <div class="land__containerper">
+          <div class="land__containe">
             <h3 class="land__title">Тайланд</h3>
             <p class="land__lead">Джугли зовут!</p>
             <p class="land__cheker">18321</p>
@@ -54,7 +54,7 @@
         <li class="land directions__item">
           <img src="http://placehold.it/270x110" alt="Фотография видов Франции" class="land__img">
           <img src="http://placehold.it/35x24" alt="Национальный флаг Франции" class="land__flag">
-          <div class="land__containerper">
+          <div class="land__containe">
             <h3 class="land__title">Франция</h3>
             <p class="land__lead">Трэ бьен, манифик!</p>
             <p class="land__cheker">12518</p>
@@ -63,7 +63,7 @@
         <li class="land directions__item">
           <img src="http://placehold.it/270x110" alt="Фотография видов Чехии" class="land__img">
           <img src="http://placehold.it/35x24" alt="Национальный флаг Чехии" class="land__flag">
-          <div class="land__containerper">
+          <div class="land__containe">
             <h3 class="land__title">Чехия</h3>
             <p class="land__lead">Закоулки старой Европы</p>
             <p class="land__cheker">5326</p>
@@ -74,8 +74,8 @@
     </section>
     <section class="companions">
       <h2 class="companions__title">Попутчики</h2>
-      <p class="companions__lead">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <p class="companions__tagline">Теперь можно легко найти единомышленников!</p>
+      <p class="companions__first">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+      <p class="companions__second">Теперь можно легко найти единомышленников!</p>
       <ul class="companions__list">
         <li class="companions__item user-card">
           <div class="level-cheker user-card__level">
@@ -99,10 +99,10 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="user-card__title">
-            <h3>Таня Фирсова</h3>
+          <a href="#" class="user-card__link">
+            <h3 class="user-card__title">Таня Фирсова</h3>
           </a>
-          <ul class="tag user-card__lead">
+          <ul class="tag user-card__tag-list">
             <li class="tag__item"><a href="">#ЗОЖ</a></li>
             <li class="tag__item"><a href="">#ПП</a></li>
             <li class="tag__item"><a href="">#Фитнес</a></li>
@@ -111,10 +111,10 @@
             <li class="tag__item"><a href="">#смузи</a></li>
           </ul>
           <ul class="user-card__travel-list travel">
-            <li class="travel__item travel__plane travel__item--active">Самолет</li>
-            <li class="travel__item travel__bus">Автобус</li>
-            <li class="travel__item travel__bicycle">Велосипед</li>
-            <li class="travel__item travel__run">Бег</li>
+            <li class="travel__item travel__item--plane travel__item--active">Самолет</li>
+            <li class="travel__item travel__item--bus">Автобус</li>
+            <li class="travel__item travel__item--bicycle">Велосипед</li>
+            <li class="travel__item travel__item--run">Бег</li>
           </ul>
         </li>
         <li class="companions__item user-card">
@@ -123,8 +123,8 @@
             <span class="level-cheker__level">level</span>
           </div>
           <img src="http://placehold.it/270x270" alt="Петя Демин" class="user-card__avatar">
-          <a href="#" class="user-card__title">
-            <h3>Петя Демин</h3>
+          <a href="#" class="user-card__link">
+            <h3 class="user-card__title">Петя Демин</h3>
           </a>
           <div class="user-card__country-list country-list">
             <ul class=" country-list__list">
@@ -138,7 +138,7 @@
               </li>
             </ul>
           </div>
-          <ul class="tag user-card__lead">
+          <ul class="tag user-card__tag-list">
             <li class="tag__item"><a href="">#бургер</a></li>
             <li class="tag__item"><a href="">#бар</a></li>
             <li class="tag__item"><a href="">#футбол</a></li>
@@ -146,17 +146,17 @@
             <li class="tag__item"><a href="">#крафт</a></li>
           </ul>
           <ul class="user-card__travel-list travel">
-            <li class="travel__plane travel__item--active">Самолет</li>
-            <li class="travel__bus travel__item--active">Автобус</li>
-            <li class="travel__bicycle">Велосипед</li>
-            <li class="travel__run travel__item--active">Бег</li>
+            <li class="travel__item--plane travel__item--active">Самолет</li>
+            <li class="travel__item--bus travel__item--active">Автобус</li>
+            <li class="travel__item--bicycle">Велосипед</li>
+            <li class="travel__item--run travel__item--active">Бег</li>
           </ul>
         </li>
       </ul>
       <a href="#" class="companions__to-all button">Показать всех</a>
     </section>
     <section class="creation-card">
-      <h2 class="creation-card__lead">Добавтьте свой профиль</h2>
+      <h2 class="creation-card__title">Добавтьте свой профиль</h2>
       <ul class="creation-card__list">
         <li class="creation-card__item">
           <p class="creation-card__type">Базовое размещение</p>
@@ -171,6 +171,7 @@
           <p class="creation-card__price">99 руб./ме</p>
         </li>
       </ul>
+      <a href="#" class="creation-card__link">Показать тарифы для бизнеса</a>
     </section>
   </main>
   <footer class="page-footer">
@@ -186,10 +187,10 @@
         <a href="#" class="social__link social__link--instagram">Мы в инстаграме</a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
+    <p class="page-footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
       <a href="#" class="copyright__link">HTML Academy</a>
-    </div>
+    </p>
   </footer>
 </body>
 
