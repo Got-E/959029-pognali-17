@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="pege-header__logo">
+      <img src="http://placehold.it/100x19" alt="Погнали" class="page-header__logo-image">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    </nav>
+    <h1 class="page-header__tagline">В путешествие с крутыми попутчиками!</h1>
+    <img src="http://placehold.it/192x255" alt="Молодой парень с чемоданом" class="page-header__promo-img">
+    <div class="page-header__container">
+      <a href="#" class="page-header__phone">Позвони нам</a>
+      <a href="#" class="page-header__mail">Отправить письмо</a>
+      <a href="#" class="page-header__singin">Загерестрируйся</a>
+    </div>
+  </header>
+  <main class="page-main">
+    <blockquote class="review">
+      <p class="review__quote">«Лучшее приложение, что я видел в жизни!»</p>
+      <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+    </blockquote>
+    <ol class="instruction">
+      <li class="instruction__item">Выберите направление</li>
+      <li class="instruction__item">Изучите идеи путешественников</li>
+      <li class="instruction__item">Находите тех, кто похож на вас</li>
+      <li class="instruction__item">Путешествуйте вместе!</li>
+    </ol>
+    <section class="info">
+      <h2 class="info__title">О сервисе</h2>
+      <p class="info__first">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+      <p class="info__second">Теперь можно легко найти единомышленников!</p>
+    </section>
+    <section class="directions">
+      <h2 class="directions__title">Направления</h2>
+      <p class="directions__lead">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+      <ul class="directions__list">
+        <li class="land directions__item">
+          <img src="http://placehold.it/270x110" alt="Фотография видов Тайланда" class="land__img">
+          <img src="http://placehold.it/35x24" alt="Национальный флаг Тайланда" class="land__flag">
+          <div class="land__containe">
+            <h3 class="land__title">Тайланд</h3>
+            <p class="land__lead">Джугли зовут!</p>
+            <p class="land__cheker">18321</p>
+          </div>
+        </li>
+        <li class="land directions__item">
+          <img src="http://placehold.it/270x110" alt="Фотография видов Франции" class="land__img">
+          <img src="http://placehold.it/35x24" alt="Национальный флаг Франции" class="land__flag">
+          <div class="land__containe">
+            <h3 class="land__title">Франция</h3>
+            <p class="land__lead">Трэ бьен, манифик!</p>
+            <p class="land__cheker">12518</p>
+          </div>
+        </li>
+        <li class="land directions__item">
+          <img src="http://placehold.it/270x110" alt="Фотография видов Чехии" class="land__img">
+          <img src="http://placehold.it/35x24" alt="Национальный флаг Чехии" class="land__flag">
+          <div class="land__containe">
+            <h3 class="land__title">Чехия</h3>
+            <p class="land__lead">Закоулки старой Европы</p>
+            <p class="land__cheker">5326</p>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="directions__to-all button">Показать все</a>
+    </section>
+    <section class="companions">
+      <h2 class="companions__title">Попутчики</h2>
+      <p class="companions__first">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+      <p class="companions__second">Теперь можно легко найти единомышленников!</p>
+      <ul class="companions__list">
+        <li class="companions__item user-card">
+          <div class="level-cheker user-card__level">
+            <span class="level-cheker__number">99</span>
+            <span class="level-cheker__level">level</span>
+          </div>
+          <img src="http://placehold.it/270x270" alt="Таня Фирсова" class="user-card__avatar">
+          <div class="user-card__country-list country-list">
+            <ul class="country-list__list">
+              <li class="country-list__item">
+                <img src="http://placehold.it/35x24" alt="Национальный флаг Шри ланки" class="country-list__flag">
+                <span class="country-list__country">Шри ланка</span>
+              </li>
+              <li class="country-list__item">
+                <img src="http://placehold.it/35x24" alt="Национальный флаг Тайланда" class="country-list__flag">
+                <span class="country-list__country">Тайланд</span>
+              </li>
+              <li class="country-list__item">
+                <img src="http://placehold.it/35x24" alt="Национальный флаг Сейшел" class="country-list__flag">
+                <span class="country-list__country">Сейшелы</span>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="user-card__link">
+            <h3 class="user-card__title">Таня Фирсова</h3>
+          </a>
+          <ul class="tag user-card__tag-list">
+            <li class="tag__item"><a href="">#ЗОЖ</a></li>
+            <li class="tag__item"><a href="">#ПП</a></li>
+            <li class="tag__item"><a href="">#Фитнес</a></li>
+            <li class="tag__item"><a href="">#пляж</a></li>
+            <li class="tag__item"><a href="">#авокадо</a></li>
+            <li class="tag__item"><a href="">#смузи</a></li>
+          </ul>
+          <ul class="user-card__travel-list travel">
+            <li class="travel__item travel__item--plane travel__item--active">Самолет</li>
+            <li class="travel__item travel__item--bus">Автобус</li>
+            <li class="travel__item travel__item--bicycle">Велосипед</li>
+            <li class="travel__item travel__item--run">Бег</li>
+          </ul>
+        </li>
+        <li class="companions__item user-card">
+          <div class="level-cheker user-card__level">
+            <span class="level-cheker__number">80</span>
+            <span class="level-cheker__level">level</span>
+          </div>
+          <img src="http://placehold.it/270x270" alt="Петя Демин" class="user-card__avatar">
+          <a href="#" class="user-card__link">
+            <h3 class="user-card__title">Петя Демин</h3>
+          </a>
+          <div class="user-card__country-list country-list">
+            <ul class=" country-list__list">
+              <li class="country-list__item">
+                <img src="http://placehold.it/35x24" alt="Национальный флаг Бельгии" class="country-list__flag">
+                <sapn class="country-list__country visually-hidden">Бельгия</sapn>
+              </li>
+              <li class="country-list__item">
+                <img src="http://placehold.it/35x24" alt="Национальный флаг Чехии" class="country-list__flag">
+                <sapn class="country-list__country visually-hidden">Чехия</sapn>
+              </li>
+            </ul>
+          </div>
+          <ul class="tag user-card__tag-list">
+            <li class="tag__item"><a href="">#бургер</a></li>
+            <li class="tag__item"><a href="">#бар</a></li>
+            <li class="tag__item"><a href="">#футбол</a></li>
+            <li class="tag__item"><a href="">#концерт</a></li>
+            <li class="tag__item"><a href="">#крафт</a></li>
+          </ul>
+          <ul class="user-card__travel-list travel">
+            <li class="travel__item--plane travel__item--active">Самолет</li>
+            <li class="travel__item--bus travel__item--active">Автобус</li>
+            <li class="travel__item--bicycle">Велосипед</li>
+            <li class="travel__item--run travel__item--active">Бег</li>
+          </ul>
+        </li>
+      </ul>
+      <a href="#" class="companions__to-all button">Показать всех</a>
+    </section>
+    <section class="creation-card">
+      <h2 class="creation-card__title">Добавтьте свой профиль</h2>
+      <ul class="creation-card__list">
+        <li class="creation-card__item">
+          <p class="creation-card__type">Базовое размещение</p>
+          <p class="creation-card__price">Бесплатно</p>
+        </li>
+        <li class="creation-card__item">
+          <p class="creation-card__type">Вывод на первых позициях</p>
+          <p class="creation-card__price">99 руб./мес</p>
+        </li>
+        <li class="creation-card__item">
+          <p class="creation-card__type">Кастомный цвет карточки</p>
+          <p class="creation-card__price">99 руб./ме</p>
+        </li>
+      </ul>
+      <a href="#" class="creation-card__link">Показать тарифы для бизнеса</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <img class="http://placehold.it/100x19" alt="логотип сайта Погнали" class="page-footer__logo page-footer__logo--mod">
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--instagram">Мы в инстаграме</a>
+      </li>
+    </ul>
+    <p class="page-footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
+      <a href="#" class="copyright__link">HTML Academy</a>
+    </p>
+  </footer>
+</body>
+
 </html>
