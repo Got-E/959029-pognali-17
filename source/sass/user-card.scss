@@ -1,0 +1,14 @@
+.user-card {
+  color: $main-light-color;
+  background-color: $white;
+}
+
+.user-card__link {
+  text-decoration: none;
+}
+
+.user-card__title {
+  font-size: $fon-size-h3;
+  color: $main-light-color;
+  line-height: 1em;
+}

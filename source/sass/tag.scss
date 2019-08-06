@@ -1,0 +1,10 @@
+.tag {
+  list-style: none;
+}
+
+.tag__item a {
+  display: block;
+  line-height: 1.125em;
+  color: $third-dark-color;
+  text-decoration: none;
+}

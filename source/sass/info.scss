@@ -1,0 +1,14 @@
+.info {
+  background-image: url("../img/about-tablet@1x.png");
+  background-repeat: no-repeat;
+}
+
+.info__title {
+  font-size: $fon-size-h2;
+  font-weight: 700;
+  color: $second-dark-color;
+}
+
+.info__second {
+  font-weight: 700;
+}

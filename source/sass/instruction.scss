@@ -1,0 +1,39 @@
+.instruction {
+  margin: 0;
+  font-size: $fon-size-up;
+  line-height: 1em;
+  font-weight: 700;
+  color: $main-dark-color;
+  counter-reset: myCounter;
+}
+
+.instruction__item {
+  position: relative;
+  list-style: none;
+
+  &::after {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: $white;
+  }
+
+  &:nth-child(5n+1) {
+    background-color: $second-dark-color;
+  }
+
+  &:nth-child(5n+2) {
+    background-color: $second-color;
+  }
+
+  &:nth-child(5n+3) {
+    background-color: $second-light-color;
+  }
+
+  &:nth-child(5n+4) {
+    background-color: $second-lightest-color;
+  }
+}
