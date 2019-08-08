@@ -4,7 +4,7 @@
 }
 
 .creation-card__title {
-  font-size: $fon-size-h2;
+  font-size: $font-size-h2;
   line-height: 1em;
   color: $second-dark-color;
 }
@@ -22,7 +22,6 @@
   &::after {
     counter-increment: myCounter;
     content: counter(myCounter);
-    display: block;
     width: 34px;
     height: 34px;
     position: absolute;
