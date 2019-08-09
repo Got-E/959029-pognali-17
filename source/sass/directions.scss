@@ -1,0 +1,14 @@
+.directions {
+  color: $third-dark-color;
+  background-color: $third-light-color;
+}
+
+.directions__title {
+  font-size: $font-size-h2;
+  font-weight: 700;
+  color: $second-dark-color;
+}
+
+.directions__list {
+  list-style: none;
+}

@@ -10,3 +10,12 @@
   width: 1px;
   white-space: nowrap;
 }
+
+body {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 300;
+  color: $white;
+  background-color: $main-color;
+}

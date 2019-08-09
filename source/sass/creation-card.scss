@@ -1,0 +1,50 @@
+.creation-card {
+  color: $third-dark-color;
+  background-color: $third-light-color;
+}
+
+.creation-card__title {
+  font-size: $font-size-h2;
+  line-height: 1em;
+  color: $second-dark-color;
+}
+
+
+.creation-card__list {
+  margin: 0;
+  counter-reset: myCounter;
+}
+
+.creation-card__item {
+  position: relative;
+  list-style: none;
+
+  &::after {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 34px;
+    text-align: center;
+    color: $white;
+    background-color: $second-color;
+    border-radius: 50%;
+  }
+
+  &:nth-child(3n+2)::after {
+    background-color: $second-light-color;
+  }
+
+  &:nth-child(3n+3)::after {
+    background-color: $second-lightest-color;
+  }
+}
+
+.creation-card__link {
+  font-weight: 700;
+  color: #192144;
+  text-decoration: none;
+}

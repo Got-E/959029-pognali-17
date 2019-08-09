@@ -1,0 +1,20 @@
+.level-cheker {
+  display: block;
+  width: 60px;
+  height: 60px;
+  color: $white;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.level-cheker__number {
+  display: block;
+  font-size: $font-size-h2;
+  font-weight: 700;
+}
+
+.level-checker__level {
+  display: block;
+  font-size: $font-size-down;
+  line-height: 1em;
+}
