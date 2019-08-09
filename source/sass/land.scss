@@ -1,0 +1,22 @@
+.land {
+  position: relative;
+}
+
+.land__container {
+  background-color: $white;
+}
+
+.land__title {
+  font-size: $font-size-h3;
+  color: $main-dark-color;
+}
+
+.land__lead {
+  line-height: 1.125em;
+  color: $third-color;
+}
+
+.land__cheker {
+  line-height: 1.875em;
+  color: $third-color;
+}
