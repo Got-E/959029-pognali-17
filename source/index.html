@@ -3,37 +3,82 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
   <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
   <header class="page-header">
-    <a class="pege-header__logo">
-      <img src="http://placehold.it/100x19" alt="Погнали" class="page-header__logo-image">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-    </nav>
-    <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
-    <img src="http://placehold.it/192x255" alt="Молодой парень с чемоданом" class="page-header__promo-img">
-    <div class="page-header__containerr">
-      <a href="#" class="page-header__phone">Позвони нам</a>
-      <a href="#" class="page-header__mail">Отправить письмо</a>
-      <a href="#" class="page-header__singin">Загерестрируйся</a>
+    <div class="page-header__wrap page-header__wrap--earth">
+      <div class="page-header__container ">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+            <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="поиск попутчиков «погнали»">
+          </picture>
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <nav class="page-header__main-nav page-header__main-nav--toggle main-nav ">
+          <a class="main-nav__link">О сервисе</a>
+          <a href="form.html" class="main-nav__link">Направления</a>
+          <a href="catalog.html" class="main-nav__link">Попутчики</a>
+        </nav>
+        <div class="page-header__contacts page-header__contacts--toggle contacts ">
+          <a href="#" class="contacts__item contacts__item--phone contacts__item--toggle">8 800 555-86-28</a>
+          <a href="#" class="contacts__item contacts__item--mail contacts__item--toggle">mail@htmlacademy.ru</a>
+          <a href="#" class="contacts__item contacts__item--singin">Авторизация</a>
+        </div>
+        <ul class="page-header__social page-header__social--toggle social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">Мы в инстаграме</a>
+          </li>
+      </div>
+      <div class="page-header__inner">
+        <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
+        <picture class="page-header__promo-pic">
+          <source media="(min-width: 1200px)" srcset="img/traveller-illustration-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.png">
+          <img class="page-header__promo-img"  src="img/traveller-illustration-mobile@1x.png" alt="Молодой парень с чемоданом">
+        </picture>
+        <blockquote class="page-header__review page-header__review--toggle review">
+          <p class="review__quote">«Лучшее приложение, что я видел в жизни!»</p>
+          <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      </div>
+      </blockquote>
+    </div>
+    <div class="page-header__wrap">
+      <div class="page-header__contacts contacts">
+        <a href="#" class="contacts__item contacts__item--phone">8 800 555-86-28</a>
+        <a href="#" class="contacts__item contacts__item--mail">mail@htmlacademy.ru</a>
+        <a href="#" class="contacts__item contacts__item--singin">Авторизация</a>
+      </div>
+      </ul>
+      <blockquote class="page-header__review review">
+        <p class="review__quote">«Лучшее приложение, что я видел в жизни!»</p>
+        <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      </blockquote>
+    </div>
+    <div class="page-header__background">
+      <ol class="instruction">
+        <li class="instruction__item">Выберите направление</li>
+        <li class="instruction__item">Изучите идеи путешественников</li>
+        <li class="instruction__item">Находите тех, кто похож на вас</li>
+        <li class="instruction__item">Путешествуйте вместе!</li>
+      </ol>
     </div>
   </header>
+
   <main class="page-main">
-    <blockquote class="review">
-      <p class="review__quote">«Лучшее приложение, что я видел в жизни!»</p>
-      <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-    </blockquote>
-    <ol class="instruction">
-      <li class="instruction__item">Выберите направление</li>
-      <li class="instruction__item">Изучите идеи путешественников</li>
-      <li class="instruction__item">Находите тех, кто похож на вас</li>
-      <li class="instruction__item">Путешествуйте вместе!</li>
-    </ol>
+
     <section class="info">
       <h2 class="info__title">О сервисе</h2>
       <p class="info__first">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
@@ -177,7 +222,7 @@
   </main>
   <footer class="page-footer">
     <img class="http://placehold.it/100x19" alt="логотип сайта Погнали" class="page-footer__logo page-footer__logo--mod">
-    <ul class="page-footer__social social">
+    <ul class="page-footer__social social social--footer">
       <li class="social__item">
         <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
       </li>
@@ -194,5 +239,5 @@
     </p>
   </footer>
 </body>
-
+<script src="js/app.js"></script>
 </html>

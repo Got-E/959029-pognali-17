@@ -3,14 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a href="#" class="pege-header__logo">
-      <img src="http://placehold.it/100x19" alt="логотип сайта Погнали" class="page-header__logo-image">
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+        <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="поиск попутчиков «погнали»">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -167,12 +172,12 @@
             <button class="like__heard" type="button">Лайк</button>
             <span class="like__cheker">23</span>
           </div>
-            <ul class="tag pard-card__tag-list">
-              <li class="tag__item"><a href="#">#образование</a></li>
-              <li class="tag__item"><a href="#">#карьера</a></li>
-              <li class="tag__item"><a href="#">#учеба</a></li>
-              <li class="tag__item"><a href="#">#линкедин</a></li>
-            </ul>
+          <ul class="tag pard-card__tag-list">
+            <li class="tag__item"><a href="#">#образование</a></li>
+            <li class="tag__item"><a href="#">#карьера</a></li>
+            <li class="tag__item"><a href="#">#учеба</a></li>
+            <li class="tag__item"><a href="#">#линкедин</a></li>
+          </ul>
           <div class="pard-card__country-list country-list">
             <h3 class="country-list__title">хочет посетить:</h3>
             <ul class="pard-card__country-list country-list__list">
@@ -210,7 +215,7 @@
   </main>
   <footer class="page-footer">
     <img class="http://placehold.it/100x19" alt="логотип сайта Погнали" class="page-footer__logo--mod page-footer__logo">
-    <ul class="page-footer__social social">
+    <ul class="page-footer__social social social--footer">
       <li class="social__item">
         <a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
       </li>

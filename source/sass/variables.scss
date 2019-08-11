@@ -1,6 +1,7 @@
 // цвета
 $main-color: #192144;
 $main-dark-color:#161c35;
+$main-darknest-color: #161c36;
 $main-light-color: #1d2e5b;
 
 $second-color: #ffa530;
@@ -14,10 +15,17 @@ $third-color: rgba(68, 68, 68, 0.3);
 $white: #ffffff;
 
 // шрифты
-$fon-size: 16px;
-$fon-size-up:18px;
-$fon-size-down: 14px;
-$fon-size-h1: 36px;
-$fon-size-h2: 24px;
-$fon-size-h3: 21px;
+$font-size: 16px;
+$font-size-up:18px;
+$font-size-down: 14px;
+$font-size-h1: 36px;
+$font-size-h1-up: 60px;
+$font-size-h2: 24px;
+$font-size-h2-up: 30px;
+$font-size-h3: 21px;
+$font-size-h3-up: 28px;
 $line-height: 1.375em;
+
+// размеры
+$tablet-width: 768px;
+$desktop-width: 1440px;

@@ -1,3 +1,20 @@
+.review {
+  display: none;
+  margin: 0;
+}
+
 .review__author {
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    font-size: $font-size-h3-up;
+    line-height: 1.18em;
+  }
+
+  .review__author {
+    font-size: $font-size-h3;
+    line-height: 1.19em;
+  }
 }
