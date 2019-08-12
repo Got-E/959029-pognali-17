@@ -1,20 +1,17 @@
 .review {
-  display: none;
+  display: block;
+  width: 155px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 31px;
+}
+
+.review__quote {
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .review__author {
   font-weight: 700;
-}
-
-@media (min-width: $tablet-width) {
-  .review {
-    font-size: $font-size-h3-up;
-    line-height: 1.18em;
-  }
-
-  .review__author {
-    font-size: $font-size-h3;
-    line-height: 1.19em;
-  }
+  font-style: normal;
 }

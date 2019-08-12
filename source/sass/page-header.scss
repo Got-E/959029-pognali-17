@@ -1,29 +1,79 @@
 .page-header {
   min-width: 320px;
   background-color: $main-darknest-color;
+  background-image: linear-gradient($main-darknest-color 76.33%, $main-color 76.33%);
 }
 
 .page-header__wrap {
-  width: 270px;
+  width: 320px;
   margin: 0 auto;
 }
 
-.page-header__wrap--earth {
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-
 .page-header__container {
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+
+  .page-header__logo-image {
+    margin-top: 27px;
+  }
+
+  .page-header__logo-image-alt {
+    display: none;
+  }
+
+  .page-header__main-nav {
+    display: none;
+  }
+
+  .page-header__contacts {
+    display: none;
+  }
+
+  .page-header__social {
+    display: none;
+  }
 }
 
+.page-header__container--open {
+  min-height: 568px;
+  align-items: flex-start;
+  background-color: $white;
+
+  .page-header__logo-image-alt {
+    display: block;
+    margin-top: 27px;
+  }
+
+  .page-header__logo-image {
+    display: none;
+  }
+
+  .page-header__toggle {
+    background-color: $main-color;
+  }
+
+  .page-header__main-nav {
+    display: block;
+  }
+
+  .page-header__contacts {
+    display: block;
+  }
+
+  .page-header__social {
+    display: flex;
+    margin-left: 60px;
+  }
+}
+
+// стиль бля кнопки меню
 .page-header__toggle {
   width: 25px;
   height: 11px;
+  margin-top: 27px;
   padding: 0;
   text-indent: 100%;
   white-space: nowrap;
@@ -32,58 +82,55 @@
   border: none;
 }
 
-.page-header__container--open {
-  min-height: 568px;
-  background-color: $white;
+.page-header__inner {
+  position: relative;
+  background: url("../img/traveller-illustration-mobile@1x.png") 78px 127px no-repeat, url("../img/globe-back-mobile@1x.jpg") center -95px;
+
+  .page-header__review {
+    position: relative;
+  }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 380px;
+    left: -10px;
+    width: 340px;
+    height: 290px;
+    z-index: 0;
+    background-color: $main-dark-color;
+  }
 }
 
 .page-header__title {
   width: 240px;
   margin: 0 auto;
+  margin-top: 43px;
+  margin-bottom: 247px;
   font-weight: 700;
+  text-align: center;
   font-size: $font-size-h1;
-  line-height: 40px;
+  line-height: 1.1111;
   color: #ffffff;
-}
 
-.page-header__promo-img {
-  display: block;
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h1 + 24;
+    line-height: 1.1667;
+  }
 }
 
 .page-header__contacts {
-  display: flex;
-  margin-top: -20px;
+  position: relative;
+  width: 270px;
+  margin: 0 auto;
 }
 
-.page-header__social--toggle {
-  display: none;
-}
-
-.page-header__review {
-  display: block;
-}
-
-.page-header__review--toggle {
-  display: none;
-}
-
-.page-header__background {
+.page-header__instruction {
   background-color: $main-color;
 }
 
-.page-header__contacts--toggle,
-.page-header__main-nav--toggle {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
-  .page-header__wrap--earth {
-    background-image: url("../img/globe-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-
   .page-header__wrap {
     width: 768px;
   }
@@ -93,40 +140,11 @@
     margin: 0 auto;
   }
 
-  .page-header__contacts {
-    display: none;
-    margin: 0;
-  }
-
-  .page-header__contacts--toggle {
-    display: flex;
-  }
-
-  .page-header__review {
-    display: none;
-  }
-
-  .page-header__review--toggle {
-    display: block;
-    width: 260px;
-    order: 1;
-  }
-
   .page-header__inner {
     display: flex;
     flex-wrap: wrap;
     width: 688px;
     margin: 0 auto;
-  }
-
-  .page-header__title {
-    width: 100%;
-    font-size: $font-size-h1-up;
-    line-height: 1.166em;
-  }
-
-  .page-header__promo-pic {
-    order: 2;
   }
 }
 
@@ -142,25 +160,5 @@
 
   .page-header__inner {
     width: 1320px;
-  }
-
-  .page-header__toggle {
-    display: none;
-  }
-
-  .page-header__main-nav {
-    display: flex;
-  }
-
-  .page-header__review--toggle {
-    order: 3;
-  }
-
-  .page-header__title {
-    width: 400px;
-  }
-
-  .page-header__background {
-    background-color: transparent;
   }
 }

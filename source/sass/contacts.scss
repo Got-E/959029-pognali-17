@@ -1,15 +1,11 @@
 .contacts {
-  display: none;
+  display: flex;
   width: 270px;
-  height: 40px;
 }
 
 .contacts__item {
   text-decoration: none;
-  font-size: $font-size-up;
   font-weight: 700;
-  line-height: 1.66em;
-  color: $main-dark-color;
 }
 
 .contacts__item--phone {
@@ -36,20 +32,86 @@
   box-sizing: border-box;
   width: 189px;
   padding: 7px 0 0 36px;
+  font-size: $font-size-lg;
+  line-height: 1.7647;
+  color: $main-dark-color;
   text-transform: uppercase;
   background-color: $second-lightest-color;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-lg + 3;
+    line-height: 1.5;
+  }
+}
+
+.contacts--menu {
+  flex-wrap: wrap;
+
+  .contacts__item {
+    position: relative;
+    width: 270px;
+  }
+
+  .contacts__item--phone {
+    min-height: 45px;
+    padding-top: 12px;
+    padding-left: 61px;
+    text-indent: inherit;
+    white-space: normal;
+    overflow: auto;
+    color: $main-color;
+    background-color: $white;
+    border-radius: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 45px;
+      height: 45px;
+      background-color: $main-dark-color;
+      border-radius: 50%;
+    }
+  }
+
+  .contacts__item--mail {
+    min-height: 45px;
+    padding-top: 12px;
+    padding-left: 61px;
+    text-transform: uppercase;
+    text-indent: inherit;
+    white-space: normal;
+    overflow: auto;
+    color: $main-color;
+    background-color: $white;
+    border-radius: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 45px;
+      height: 45px;
+      background-color: $main-dark-color;
+      border-radius: 50%;
+    }
+  }
+
+  .contacts__item--singin {
+    order: -1;
+    height: 50px;
+    padding-left: 77px;
+    padding-top: 13px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__item--toggle {
-    display: none;
-  }
-
-  .contacts__item {
-    font-size: $font-size-h3;
-  }
-
   .contacts {
     width: auto;
     height: auto;
@@ -57,10 +119,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__item--toggle {
-    display: block;
-  }
-
   .contacts__item--phone {
     width: 50px;
     height: 50px;
