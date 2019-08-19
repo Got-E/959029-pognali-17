@@ -15,3 +15,21 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    margin-top: 87px;
+    margin-left: 34px;
+  }
+
+  .review__quote {
+    margin-bottom: 46px;
+    line-height: 1.1785;
+  }
+
+  .review__author {
+    display: inline-block;
+    font-size: $font-size + 5;
+    line-height: 1.19;
+  }
+}

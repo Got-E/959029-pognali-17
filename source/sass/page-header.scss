@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  z-index: 0;
   min-width: 320px;
   background-color: $main-darknest-color;
   background-image: linear-gradient($main-darknest-color 76.33%, $main-color 76.33%);
@@ -7,6 +9,28 @@
 .page-header__wrap {
   width: 320px;
   margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 223px;
+    left: 79px;
+    width: 192px;
+    height: 255px;
+    background-image: url("../img/traveller-illustration-mobile@1x.png");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 320px;
+    height: 596px;
+    background-image: url("../img/globe-back-mobile@1x.jpg");
+  }
 }
 
 .page-header__container {
@@ -68,8 +92,8 @@
     margin-left: 60px;
   }
 }
+// стиль для кнопки меню
 
-// стиль бля кнопки меню
 .page-header__toggle {
   width: 25px;
   height: 11px;
@@ -80,16 +104,18 @@
   overflow: hidden;
   background-color: $white;
   border: none;
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .page-header__inner {
   position: relative;
-  background: url("../img/traveller-illustration-mobile@1x.png") 78px 127px no-repeat, url("../img/globe-back-mobile@1x.jpg") center -95px;
-
+  // background: url("../img/traveller-illustration-mobile@1x.png") 78px 127px no-repeat, url("../img/globe-back-mobile@1x.jpg") center -95px no-repeat;
   .page-header__review {
     position: relative;
   }
-
 
   &::before {
     content: "";
@@ -105,9 +131,7 @@
 
 .page-header__title {
   width: 240px;
-  margin: 0 auto;
-  margin-top: 43px;
-  margin-bottom: 247px;
+  margin: 43px auto 247px;
   font-weight: 700;
   text-align: center;
   font-size: $font-size-h1;
@@ -131,34 +155,153 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    background-color: $main-color;
+    background-image: none;
+  }
+
   .page-header__wrap {
     width: 768px;
+
+    &::before {
+      top: 402px;
+      left: 284px;
+      width: 372px;
+      height: 451px;
+      background-image: url("../img/traveller-illustration-tablet@1x.png");
+    }
+
+    &::after {
+      top: 383px;
+      left: -356px;
+      width: 1479px;
+      height: 612px;
+      background-image: url("../img/globe-back-tablet@1x.jpg");
+    }
   }
 
   .page-header__container {
-    width: 688px;
-    margin: 0 auto;
+    padding: 0 40px;
+
+    .page-header__toggle {
+      margin-right: 332px;
+      margin-top: 33px;
+    }
+
+    .page-header__logo {
+      margin-top: 16px;
+    }
+
+    .page-header__contacts {
+      position: static;
+      display: flex;
+      width: auto;
+      margin: 33px 0 0;
+    }
+  }
+
+  .page-header__container--open {
+    position: relative;
+    align-content: flex-start;
+    width: 768px;
+    height: 910px;
+
+    .page-header__toggle {
+      margin-top: 54px;
+    }
+
+    .page-header__main-nav {
+      margin-left: 56px;
+      margin-top: 95px;
+    }
+
+    .page-header__contacts {
+      margin-top: 128px;
+      margin-left: 56px;
+    }
+
+    .page-header__social {
+      margin-top: 110px;
+    }
   }
 
   .page-header__inner {
     display: flex;
     flex-wrap: wrap;
-    width: 688px;
-    margin: 0 auto;
+    padding: 0 40px;
+    margin-bottom: 176px;
+
+    .page-header__title {
+      width: 395px;
+      text-align: center;
+      margin: 33px auto 0;
+    }
+
+    .page-header__review {
+      width: 260px;
+    }
+
+    .page-header__contacts {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .page-header__instruction {
+    background-color: transparent;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrap {
     width: 1440px;
+
+    &::before {
+      background-image: none;
+    }
+
+    &::after {
+      background-image: none;
+    }
   }
 
   .page-header__container {
-    width: 1320px;
-    padding-top: 47px;
+    padding: 0 60px;
+
+    .page-header__logo {
+      position: relative;
+      margin-top: 19px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 54px;
+        right: -100px;
+        width: 60px;
+        height: 2px;
+        background-color: $white;
+      }
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
+
+    .page-header__main-nav {
+      display: block;
+      margin-top: 40px;
+      margin-right: 148px;
+    }
+
+    .page-header__contacts {
+      margin-top: 37px;
+    }
   }
 
   .page-header__inner {
-    width: 1320px;
+    width: 1440px;
   }
 }

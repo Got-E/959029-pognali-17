@@ -32,7 +32,7 @@
   box-sizing: border-box;
   width: 189px;
   padding: 7px 0 0 36px;
-  font-size: $font-size-lg;
+  font-size: $font-size-l;
   line-height: 1.7647;
   color: $main-dark-color;
   text-transform: uppercase;
@@ -40,7 +40,7 @@
   border-radius: 25px;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-lg + 3;
+    font-size: $font-size-l + 3;
     line-height: 1.5;
   }
 }
@@ -69,7 +69,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      display: block;
       width: 45px;
       height: 45px;
       background-color: $main-dark-color;
@@ -94,7 +93,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      display: block;
       width: 45px;
       height: 45px;
       background-color: $main-dark-color;
@@ -112,24 +110,104 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts {
-    width: auto;
-    height: auto;
+  .contacts--menu {
+    width: 450px;
+
+    .contacts__item {
+      &--singin {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 189px;
+        padding-top: 10px;
+        padding-left: 28px;
+      }
+    }
+
+    .contacts__item--phone {
+      width: 450px;
+      padding-top: 19px;
+      padding-left: 90px;
+      padding-bottom: 9px;
+
+      &::before {
+        width: 67px;
+        height: 67px;
+      }
+    }
+
+    .contacts__item--mail {
+      width: 450px;
+      padding-top: 19px;
+      padding-left: 90px;
+      padding-bottom: 17px;
+
+      &::before {
+        width: 67px;
+        height: 67px;
+      }
+    }
+
+    .contacts__item--toggle {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__item--phone {
-    width: 50px;
-    height: 50px;
-  }
+  .contacts--menu {
+    display: flex;
+    width: 289px;
 
-  .contacts__item--mail {
-    width: 50px;
-    height: 50px;
-  }
+    .contacts__item--toggle {
+      display: block;
+    }
 
-  .contacts__item--singin {
-    height: 50px;
+    .contacts__item {
+      width: 50px;
+      height: 50px;
+      padding: 0 0 50px;
+      background-color: transparent;
+
+      &--phone {
+        width: 50px;
+        height: 50px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: $second-dark-color;
+        border-radius: 50%;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &--mail {
+        width: 50px;
+        height: 50px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: $second-light-color;
+        border-radius: 50%;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &--singin {
+        position: static;
+        order: 0;
+        margin: 0;
+        padding-top: 12px;
+        padding-left: 29px;
+        padding-bottom: 0;
+        width: 189px;
+        height: 50px;
+        background-color: $second-lightest-color;
+      }
+    }
   }
 }
