@@ -136,6 +136,11 @@
   margin: 0 auto;
 }
 
+
+.page-header__instruction {
+  margin-bottom: 39px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     background-color: $main-color;
@@ -231,7 +236,7 @@
   }
 
   .page-header__instruction {
-    background-color: transparent;
+    margin-bottom: 96px;
   }
 }
 

@@ -1,14 +1,121 @@
 .directions {
+  padding-bottom: 30px;
   color: $third-dark-color;
   background-color: $third-light-color;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.directions__wrap {
+  width: 270px;
+  margin: 0 auto;
 }
 
 .directions__title {
+  margin-top: 72px;
+  margin-left: 25px;
+  margin-bottom: 20px;
   font-size: $font-size-h2;
   font-weight: 700;
   color: $second-dark-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h2 + 21;
+    line-height: 1;
+  }
+}
+
+.directions__lead {
+  width: 195px;
+  margin-left: 24px;
+  margin-bottom: 60px;
 }
 
 .directions__list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
   list-style: none;
+}
+
+.directions__item {
+  margin-top: 10px;
+}
+
+.directions__to-all {
+  width: 270px;
+  height: 62px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .directions {
+    padding-bottom: 59px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .directions__wrap {
+    width: 688px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+  }
+
+  .directions__lead {
+    width: 340px;
+    margin-left: 35px;
+    margin-bottom: 104px;
+    line-height: 1.179;
+  }
+
+  .directions__title {
+    margin-left: 33px;
+    margin-bottom: 59px;
+  }
+
+  .directions__list {
+    margin-left: 37px;
+    margin-bottom: 48px;
+  }
+
+  .directions__to-all {
+    width: 618px;
+    height: 81px;
+    margin-left: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .directions {
+    padding-bottom: 121px;
+  }
+
+  .directions__wrap {
+    position: relative;
+    width: 1320px;
+    padding-left: 765px;
+    background-image: url("../img/flags-back-destop@1x.png");
+  }
+
+  .directions__title {
+    margin-top: 80px;
+    margin-left: 37px;
+    padding-top: 85px;
+  }
+
+  .directions__lead {
+    margin-bottom: 94px;
+  }
+
+  .directions__list {
+    position: absolute;
+    top: 71px;
+    left: 15px;
+    margin-left: 0;
+  }
+
+  .directions__to-all {
+    width: 274px;
+  }
 }

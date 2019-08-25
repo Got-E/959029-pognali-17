@@ -1,6 +1,23 @@
 .user-card {
+  position: relative;
   color: $main-light-color;
   background-color: $white;
+  border-radius: 10px;
+}
+
+.user-card__level {
+  position: absolute;
+}
+
+.user-card__avatar {
+  width: 270px;
+  height: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user-card__country-list {
+  position: absolute;
 }
 
 .user-card__link {

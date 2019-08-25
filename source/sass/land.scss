@@ -2,21 +2,123 @@
   position: relative;
 }
 
+.land__img {
+  width: 270px;
+  height: 110px;
+  border-radius: 10px;
+}
+
+.land__flag {
+  position: absolute;
+  z-index: 1;
+  top: 87px;
+  left: 25px;
+  width: 35px;
+  height: 24px;
+  border-radius: 5px;
+}
+
 .land__container {
+  position: relative;
+  width: 270px;
+  padding-top: 27px;
+  padding-left: 24px;
+  padding-bottom: 23px;
+  margin-top: -18px;
   background-color: $white;
+  border-radius: 10px;
 }
 
 .land__title {
+  margin: 0;
   font-size: $font-size-h3;
   color: $main-dark-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-h3 + 3;
+    line-height: 1;
+  }
 }
 
 .land__lead {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
   line-height: 1.125em;
   color: $third-color;
 }
 
 .land__cheker {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  font-weight: 400;
   line-height: 1.875em;
   color: $third-color;
+}
+
+
+@media (min-width: $tablet-width) {
+  //костыль, я незнаю почему так
+  picture {
+    height: 140px;
+  }
+
+  .land {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 616px;
+    font-size: $font-size-h3 - 1;
+  }
+
+  .land__img {
+    width: 186px;
+    height: 140px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .land__container {
+    width: 430px;
+    height: 140px;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 27px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .land__flag {
+    top: 16px;
+    left: auto;
+    right: 150px;
+    width: 70px;
+    height: 47px;
+  }
+
+  .land__cheker {
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 30px;
+    position: static;
+  }
+
+  .land__lead {
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .land__flag {
+    top: 22px;
+    right: 152px;
+  }
+
+  .land__container {
+    width: 373px;
+    padding-top: 24px;
+    padding-left: 28px;
+  }
 }

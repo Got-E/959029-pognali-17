@@ -79,126 +79,152 @@
 
   <main class="page-main">
     <section class="info">
-      <h2 class="info__title">О сервисе</h2>
-      <p class="info__first">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-      <p class="info__second">Теперь можно легко найти единомышленников!</p>
+      <div class="info__wrap">
+        <h2 class="info__title">О сервисе</h2>
+        <p class="info__first">Любое путешествие веселее с&nbspпопутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и&nbspчерпайте вдохновение в чужих. </p>
+        <p class="info__second">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <div class="info__link">
+          <a href="#" class="button">Подробнее</a>
+        </div>
+      </div>
     </section>
     <section class="directions">
-      <h2 class="directions__title">Направления</h2>
-      <p class="directions__lead">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-      <ul class="directions__list">
-        <li class="land directions__item">
-          <img src="http://placehold.it/270x110" alt="Фотография видов Тайланда" class="land__img">
-          <img src="http://placehold.it/35x24" alt="Национальный флаг Тайланда" class="land__flag">
-          <div class="land__container">
-            <h3 class="land__title">Тайланд</h3>
-            <p class="land__lead">Джугли зовут!</p>
-            <p class="land__cheker">18321</p>
-          </div>
-        </li>
-        <li class="land directions__item">
-          <img src="http://placehold.it/270x110" alt="Фотография видов Франции" class="land__img">
-          <img src="http://placehold.it/35x24" alt="Национальный флаг Франции" class="land__flag">
-          <div class="land__container">
-            <h3 class="land__title">Франция</h3>
-            <p class="land__lead">Трэ бьен, манифик!</p>
-            <p class="land__cheker">12518</p>
-          </div>
-        </li>
-        <li class="land directions__item">
-          <img src="http://placehold.it/270x110" alt="Фотография видов Чехии" class="land__img">
-          <img src="http://placehold.it/35x24" alt="Национальный флаг Чехии" class="land__flag">
-          <div class="land__container">
-            <h3 class="land__title">Чехия</h3>
-            <p class="land__lead">Закоулки старой Европы</p>
-            <p class="land__cheker">5326</p>
-          </div>
-        </li>
-      </ul>
-      <a href="#" class="directions__to-all button">Показать все</a>
+      <div class="directions__wrap">
+        <h2 class="directions__title">Направления</h2>
+        <p class="directions__lead">Мы не продаем туры и&nbspничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <ul class="directions__list">
+          <li class="land directions__item">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg">
+              <img class="land__img" src="img/thailand-mobile@1x.jpg" alt="Фотография видов Тайланда">
+            </picture>
+            <img class="land__flag" src="http://placehold.it/35x24" alt="Национальный флаг Тайланда">
+            <div class="land__container">
+              <h3 class="land__title">Тайланд</h3>
+              <p class="land__lead">Джугли зовут!</p>
+              <p class="land__cheker">18321</p>
+            </div>
+          </li>
+          <li class="land directions__item">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg">
+              <img src="img/france-mobile@1x.jpg" alt="Фотография видов Франции" class="land__img">
+            </picture>
+            <img src="http://placehold.it/35x24" alt="Национальный флаг Франции" class="land__flag">
+            <div class="land__container">
+              <h3 class="land__title">Франция</h3>
+              <p class="land__lead">Трэ бьен, манифик!</p>
+              <p class="land__cheker">12518</p>
+            </div>
+          </li>
+          <li class="land directions__item">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg">
+              <img src="img/czech-mobile@1x.jpg" alt="Фотография видов Чехии" class="land__img">
+            </picture>
+            <img src="http://placehold.it/35x24" alt="Национальный флаг Чехии" class="land__flag">
+            <div class="land__container">
+              <h3 class="land__title">Чехия</h3>
+              <p class="land__lead">Закоулки старой Европы</p>
+              <p class="land__cheker">5326</p>
+            </div>
+          </li>
+        </ul>
+        <div class="directions__to-all">
+          <a href="#" class="button">Показать все</a>
+        </div>
+      </div>
     </section>
     <section class="companions">
-      <h2 class="companions__title">Попутчики</h2>
-      <p class="companions__first">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <p class="companions__second">Теперь можно легко найти единомышленников!</p>
-      <ul class="companions__list">
-        <li class="companions__item user-card">
-          <div class="level-cheker user-card__level">
-            <span class="level-cheker__number">99</span>
-            <span class="level-cheker__level">level</span>
-          </div>
-          <img src="http://placehold.it/270x270" alt="Таня Фирсова" class="user-card__avatar">
-          <div class="user-card__country-list country-list">
-            <ul class="country-list__list">
-              <li class="country-list__item">
-                <img src="http://placehold.it/35x24" alt="Национальный флаг Шри ланки" class="country-list__flag">
-                <span class="country-list__country visually-hidden">Шри ланка</span>
-              </li>
-              <li class="country-list__item">
-                <img src="http://placehold.it/35x24" alt="Национальный флаг Тайланда" class="country-list__flag">
-                <span class="visually-hidden">Тайланд</span>
-              </li>
-              <li class="country-list__item">
-                <img src="http://placehold.it/35x24" alt="Национальный флаг Сейшел" class="country-list__flag">
-                <span class="visually-hidden">Сейшелы</span>
-              </li>
+      <div class="companions__wrap">
+        <h2 class="companions__title">Попутчики</h2>
+        <p class="companions__first">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p class="companions__second">Теперь можно легко найти единомышленников!</p>
+        <ul class="companions__list">
+          <li class="companions__item user-card">
+            <div class="level-cheker user-card__level">
+              <span class="level-cheker__number">99</span>
+              <span class="level-cheker__level">level</span>
+            </div>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg">
+              <img src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова" class="user-card__avatar">
+            </picture>
+            <div class="user-card__country-list country-list">
+              <ul class="country-list__list">
+                <li class="country-list__item">
+                  <img src="http://placehold.it/35x24" alt="Национальный флаг Шри ланки" class="country-list__flag">
+                  <span class="country-list__country visually-hidden">Шри ланка</span>
+                </li>
+                <li class="country-list__item">
+                  <img src="http://placehold.it/35x24" alt="Национальный флаг Тайланда" class="country-list__flag">
+                </li>
+                <li class="country-list__item">
+                  <img src="http://placehold.it/35x24" alt="Национальный флаг Сейшел" class="country-list__flag">
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="user-card__link">
+              <h3 class="user-card__title">Таня Фирсова</h3>
+            </a>
+            <ul class="tag user-card__tag-list">
+              <li class="tag__item"><a href="">#ЗОЖ</a></li>
+              <li class="tag__item"><a href="">#ПП</a></li>
+              <li class="tag__item"><a href="">#Фитнес</a></li>
+              <li class="tag__item"><a href="">#пляж</a></li>
+              <li class="tag__item"><a href="">#авокадо</a></li>
+              <li class="tag__item"><a href="">#смузи</a></li>
             </ul>
-          </div>
-          <a href="#" class="user-card__link">
-            <h3 class="user-card__title">Таня Фирсова</h3>
-          </a>
-          <ul class="tag user-card__tag-list">
-            <li class="tag__item"><a href="">#ЗОЖ</a></li>
-            <li class="tag__item"><a href="">#ПП</a></li>
-            <li class="tag__item"><a href="">#Фитнес</a></li>
-            <li class="tag__item"><a href="">#пляж</a></li>
-            <li class="tag__item"><a href="">#авокадо</a></li>
-            <li class="tag__item"><a href="">#смузи</a></li>
-          </ul>
-          <ul class="user-card__travel-list travel">
-            <li class="travel__item travel__item--plane travel__item--active">Самолет</li>
-            <li class="travel__item travel__item--bus">Автобус</li>
-            <li class="travel__item travel__item--bicycle">Велосипед</li>
-            <li class="travel__item travel__item--run">Бег</li>
-          </ul>
-        </li>
-        <li class="companions__item user-card">
-          <div class="level-cheker user-card__level">
-            <span class="level-cheker__number">80</span>
-            <span class="level-cheker__level">level</span>
-          </div>
-          <img src="http://placehold.it/270x270" alt="Петя Демин" class="user-card__avatar">
-          <div class="user-card__country-list country-list">
-            <ul class=" country-list__list">
-              <li class="country-list__item">
-                <img src="http://placehold.it/35x24" alt="Национальный флаг Бельгии" class="country-list__flag">
-                <sapn class="visually-hidden">Бельгия</sapn>
-              </li>
-              <li class="country-list__item">
-                <img src="http://placehold.it/35x24" alt="Национальный флаг Чехии" class="country-list__flag">
-                <sapn class="visually-hidden">Чехия</sapn>
-              </li>
+            <ul class="user-card__travel-list travel">
+              <li class="travel__item travel__item--plane travel__item--active">Самолет</li>
+              <li class="travel__item travel__item--bus">Автобус</li>
+              <li class="travel__item travel__item--bicycle">Велосипед</li>
+              <li class="travel__item travel__item--run">Бег</li>
             </ul>
-          </div>
-          <a href="#" class="user-card__link">
-            <h3 class="user-card__title">Петя Демин</h3>
-          </a>
-          <ul class="tag user-card__tag-list">
-            <li class="tag__item"><a href="">#бургер</a></li>
-            <li class="tag__item"><a href="">#бар</a></li>
-            <li class="tag__item"><a href="">#футбол</a></li>
-            <li class="tag__item"><a href="">#концерт</a></li>
-            <li class="tag__item"><a href="">#крафт</a></li>
-          </ul>
-          <ul class="user-card__travel-list travel">
-            <li class="travel__item--plane travel__item--active">Самолет</li>
-            <li class="travel__item--bus travel__item--active">Автобус</li>
-            <li class="travel__item--bicycle">Велосипед</li>
-            <li class="travel__item--run travel__item--active">Бег</li>
-          </ul>
-        </li>
-      </ul>
-      <a href="#" class="companions__to-all button">Показать всех</a>
+          </li>
+          <li class="companions__item user-card">
+            <div class="level-cheker user-card__level">
+              <span class="level-cheker__number">80</span>
+              <span class="level-cheker__level">level</span>
+            </div>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
+              <img src="img/demin-mobile@1x.jpg" alt="Таня Фирсова" class="user-card__avatar">
+            </picture>
+            <div class="user-card__country-list country-list">
+              <ul class=" country-list__list">
+                <li class="country-list__item">
+                  <img src="http://placehold.it/35x24" alt="Национальный флаг Бельгии" class="country-list__flag">
+                  <sapn class="visually-hidden">Бельгия</sapn>
+                </li>
+                <li class="country-list__item">
+                  <img src="http://placehold.it/35x24" alt="Национальный флаг Чехии" class="country-list__flag">
+                  <sapn class="visually-hidden">Чехия</sapn>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="user-card__link">
+              <h3 class="user-card__title">Петя Демин</h3>
+            </a>
+            <ul class="tag user-card__tag-list">
+              <li class="tag__item"><a href="">#бургер</a></li>
+              <li class="tag__item"><a href="">#бар</a></li>
+              <li class="tag__item"><a href="">#футбол</a></li>
+              <li class="tag__item"><a href="">#концерт</a></li>
+              <li class="tag__item"><a href="">#крафт</a></li>
+            </ul>
+            <ul class="user-card__travel-list travel">
+              <li class="travel__item--plane travel__item--active">Самолет</li>
+              <li class="travel__item--bus travel__item--active">Автобус</li>
+              <li class="travel__item--bicycle">Велосипед</li>
+              <li class="travel__item--run travel__item--active">Бег</li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#" class="companions__to-all button">Показать всех</a>
+      </div>
     </section>
     <section class="creation-card">
       <h2 class="creation-card__title">Добавтьте свой профиль</h2>
